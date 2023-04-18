@@ -42,5 +42,8 @@ class Control:
            if (a==0):
                 raise Exception("Base Error")
             
-        return pow(a, b)
+        except Exception as e:
+            return e
+        
+        return pow(a, b)   
     
